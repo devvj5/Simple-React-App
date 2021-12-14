@@ -13,18 +13,21 @@ export default function Form() {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (firstName.length < 1) {
-            setFirstNameVal(true); setLastNameVal(false); setEmailVal(false); setPasswordVal(false)
+            setFirstNameVal(true); setLastNameVal(false); setEmailVal(false); setPasswordVal(false);
         }
         else if (lastName.length < 1) {
-            setFirstNameVal(false); setLastNameVal(true); setEmailVal(false); setPasswordVal(false)
+            setFirstNameVal(false); setLastNameVal(true); setEmailVal(false); setPasswordVal(false);
         }
         else if (email.length < 1) {
-            setFirstNameVal(false); setLastNameVal(false); setEmailVal(true); setPasswordVal(false)
+            setFirstNameVal(false); setLastNameVal(false); setEmailVal(true); setPasswordVal(false);
         }
         else if (password.length < 1) {
-            setFirstNameVal(false); setLastNameVal(false); setEmailVal(false); setPasswordVal(true)
+            setFirstNameVal(false); setLastNameVal(false); setEmailVal(false); setPasswordVal(true);
         }
         else {
+
+            setFirstNameVal(false); setLastNameVal(false); setEmailVal(false); setPasswordVal(false);
+
             let data = {
                 firstName: firstName,
                 lastName: lastName,
