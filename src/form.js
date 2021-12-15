@@ -67,28 +67,28 @@ export default function Form() {
                     <div className='form-div'>
                         <label htmlFor="firstname">First Name:</label>
                         <div>
-                            <input id="firstname" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
+                            <input id="firstname" data-testid="testinput1" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)}></input>
                             {firstNameVal && <div><small>*required</small></div>}
                         </div>
                     </div>
                     <div className='form-div'>
                         <label htmlFor="lastname"> Last Name:</label>
                         <div>
-                            <input id="lastname" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
+                            <input id="lastname" data-testid="testinput2" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
                             {lastNameVal && <div><small>*required</small></div>}
                         </div>
                     </div>
                     <div className='form-div'>
                         <label htmlFor="email">Email:</label>
                         <div>
-                            <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                            <input id="email" data-testid="testinput3" type="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
                             {emailVal && <div><small>*required</small></div>}
                         </div>
                     </div>
                     <div className='form-div'>
                         <label htmlFor="password">Password:</label>
                         <div>
-                            <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                            <input id="password" data-testid="testinput4" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
                             {passwordVal && <div><small>*required</small></div>}
                         </div>
                     </div>
