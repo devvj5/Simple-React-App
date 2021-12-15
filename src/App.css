@@ -25,6 +25,12 @@
 }
 .form-div label{
   margin-right: 10px;
+  width: 50%;
+  float: left;
+}
+.validation-div {
+  width: 70%;
+  float: right;
 }
 .form-div small{
   color: red;
